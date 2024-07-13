@@ -34,4 +34,24 @@ class CarTest {
 
         assertThatThrownBy(throwingCallable);
     }
+
+    @Test
+    void 숫자가_4_이상이면_전진한다() {
+        int number = 4;
+        Car car = new Car("자동차");
+
+        car.run(number);
+
+        assertThat(car.position).isEqualTo(1);
+    }
+
+    @Test
+    void 숫자가_4_미만이면_전진하지_않는다() {
+        int number = 3;
+        Car car = new Car("차");
+
+        car.run(number);
+
+        assertThat(car.position).isEqualTo(0);
+    }
 }
