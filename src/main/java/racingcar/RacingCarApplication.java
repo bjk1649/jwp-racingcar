@@ -12,11 +12,9 @@ public class RacingCarApplication {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		//자동차 갯수 입력
 		System.out.println("챠량의 수를 입력하세요.");
 		int n = sc.nextInt();
 
-		//자동차 이름 입력
 		System.out.println("차량 이름을 입력하세요.");
 		String input = sc.next();
 
@@ -32,13 +30,10 @@ public class RacingCarApplication {
 			cars.add(new Car(carName));
 		}
 
-		//움직일 횟수 입력
 		System.out.println("움직일 횟수를 입력하세요.");
 		int moveCount = sc.nextInt();
 
 		for(int i=0; i<moveCount; i++) {
-
-			//cars.get(i).run();
 			cars.get(i).runResult();
 		}
 	}
