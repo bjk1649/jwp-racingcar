@@ -34,6 +34,7 @@ public class RacingCarApplication {
 		int moveCount = sc.nextInt();
 
 		for(int i=0; i<moveCount; i++) {
+			Printer printer = new Printer();
 			cars.get(i).runResult();
 		}
 	}
