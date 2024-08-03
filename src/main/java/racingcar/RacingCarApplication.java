@@ -1,5 +1,7 @@
 package racingcar;
 
+import racingcar.domain.Car;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +57,7 @@ public class RacingCarApplication {
     private static void runAllCar(List<Car> cars) {
         for (Car car : cars) {
             Printer printer = new Printer();
-            car.run();
+            car.run((int) (Math.random() * 10));
             printer.runResult(car);
         }
     }

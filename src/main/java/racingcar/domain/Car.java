@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.domain;
 
 public class Car {
     public String carName;
@@ -11,8 +11,9 @@ public class Car {
         this.carName = carName;
     }
 
-    public void run() {
-        int num = (int) (Math.random() * 10);
-        if (num >= 4) position++;
+    public void run(int num) {
+        if (num >= 4) {
+            position++;
+        }
     }
 }
